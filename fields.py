@@ -20,9 +20,9 @@ Notes:
     * Parts details are addressed: ['Seahawk Outboard']['TRAILER PARTS'][0]['UOM']
 """
 
-start = 7
-end = 9
-width = 5
+start = 10
+end = 12
+width = 4
 
 # order of sections corresponds with order of starts and ends
 sections = [
@@ -35,6 +35,8 @@ sections = [
 ]
 
 possibleSize = [
+    16,
+    17,
     18,
     19,
     20,
@@ -54,7 +56,27 @@ possibleSize = [
     34,
     35,
     36,
-    37
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
 ]
 
 ##  TOP BAND        #########################################################
@@ -63,32 +85,31 @@ possibleSize = [
 # [0] title, [1] column, [2] row, [3] default
 topSection = [
     ["BOAT MODEL", 1, 1, ""],
-    ["OVERHEAD BOAT", 3, 5, ""],
-    ["RETAIL BOAT", 2, 6, ""],
-    ["OVERHEAD MOTOR AND TRAILER", 3, 7, "0"],
-    ["RETAIL MOTOR AND TRAILER", 2, 8, "0"],
+    ["OVERHEAD BOAT", 6, 5, ""],
+    ["RETAIL BOAT", 5, 6, ""],
+    ["OVERHEAD MOTOR AND TRAILER", 6, 7, "0"],
+    ["RETAIL MOTOR AND TRAILER", 5, 8, "0"],
 ]    
 
 # top of sheet, calculated column, absolute row - by boat size
 # [0] title, [1] column, [2] row, [3] default
 costSummary = [
-    [" LABOR TOTAL", 10, 2, "0"],
-    [" MATERIAL TOTAL", 10, 3, "0"],
-    [" TRAILER / ENGINE & JET", 10, 4, "0"],
-    [" TOTAL COST", 10, 5, "0"],
-	[" RETAIL BASE BOAT", 10, 6, "0"],
-	[" RETAIL MOTOR / TRAILER", 10, 7, "0"],
-    [" CREDIT", 10, 8, "0"],
-	[" CALCULATED RETAIL TOTAL", 10, 9, "0"],
-	[" CALCULATED DEALER INVOICE", 10, 10, "0"],
-	[" CALCULATED CM", 10, 11, "0"],
-	[" ADVERTISED RETAIL TOTAL", 10, 13, "0"],
-	[" ADVERTISED DEALER INVOICE", 10, 14, "0"],
-	[" ADVERTISED CM", 10, 15, "0"],
+    [" LABOR TOTAL", 13, 2, "0"],
+    [" MATERIAL TOTAL", 13, 3, "0"],
+    [" TRAILER / ENGINE & JET", 13, 4, "0"],
+    [" TOTAL COST", 13, 5, "0"],
+	[" RETAIL BASE BOAT", 13, 6, "0"],
+	[" RETAIL MOTOR / TRAILER", 13, 7, "0"],
+	[" CALCULATED RETAIL TOTAL", 13, 8, "0"],
+	[" CALCULATED DEALER INVOICE", 13, 9, "0"],
+	[" CALCULATED CM", 13, 10, "0"],
+	[" ADVERTISED RETAIL TOTAL", 13, 12, "0"],
+	[" ADVERTISED DEALER INVOICE", 13, 13, "0"],
+	[" ADVERTISED CM", 13, 14, "0"],
 ]
 
 boatLength = [
-	["BOAT SIZE", 7, 1, ""],
+	["BOAT SIZE", 10, 1, ""],
 ]
 
 ##  BOTTOM BAND    ##########################################################
@@ -104,39 +125,38 @@ bottomSection = [
 # top of section, absolute column, offset row - not by boat size
 # [0] title, [1] column, [2] row, [3] default
 startSections = [
-    [" CONSUMABLES", 1, -1, "0"],
-    [" LABOR RATE", 3, -1, "0"],
+    [" CONSUMABLES", 4, -1, "0"],
+    [" LABOR RATE", 6, -1, "0"],
 ]
 
 # top of section, calculated column, offset row - by boat size
 # [0] title, [1] column, [2] row, [3] default
 startSectionsSize = [
-    [" HOURS", 9, -1, "0"]
+    [" HOURS", 12, -1, "0"]
 ]
 
 # bottom of section, calculated column, offset row
 # [0] title, [1] column, [2] row, [3] default
 endSections = [
-    [" SUBTOTAL ALL", 10, 0, "0"],
-    [" CONSUMABLES", 10, 1, "0"],
-    [" TOTAL", 10, 2, "0"],
+    [" SUBTOTAL ALL", 13, 0, "0"],
+    [" CONSUMABLES", 13, 1, "0"],
+    [" TOTAL", 13, 2, "0"],
 ]
 
 # 1/2 body of section, absolute column, offset row
 # [0] title, [1] column, [2] row, [3] default
 partSection = [
-    ["PART NUMBER", 1, 1, ""],
-    ["DESCRIPTION", 2, 1, ""],
-    ["UOM", 3, 1, ""],
-    ["PRICE", 4, 1, "0"],
-    ["VENDOR", 5, 1, ""],
-    ["VENDOR PART", 6, 1, ""],
+    ["PART NUMBER", 4, 1, ""],
+    ["DESCRIPTION", 5, 1, ""],
+    ["UOM", 6, 1, ""],
+    ["PRICE", 7, 1, "0"],
+    ["VENDOR", 8, 1, ""],
+    ["VENDOR PART", 10, 1, ""],
 ]
 
 # 2/2 body of section, calculated column, offset row
 # [0] title, [1] column, [2] row, [3] default
 partSectionByModel = [
-    [" QTY", 7, 1, "0"],
-    [" TOTAL", 10, 1, "0"],
-    [" RRS", 11, 1, ""], 
+    [" QTY", 10, 1, "0"],
+    [" TOTAL", 13, 1, "0"], 
 ]

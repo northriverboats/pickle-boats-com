@@ -274,8 +274,8 @@ class pickler():
 
     def process_part(self, index, section, offset):
         self.part = {}
-        part = self.ws.cell(column = 1, row = 1 + offset).value
-        description = self.ws.cell(column = 2, row = 1 + offset).value
+        part = self.ws.cell(column = 4, row = 1 + offset).value
+        description = self.ws.cell(column = 5, row = 1 + offset).value
         if description == "NOT FOUND":
             error = [
                 self.data['FILE'],
